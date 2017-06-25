@@ -14,6 +14,7 @@
 		5A7330141EFFC81000CB7B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7330121EFFC81000CB7B2B /* LaunchScreen.storyboard */; };
 		5A73301F1EFFC81000CB7B2B /* EmojisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73301E1EFFC81000CB7B2B /* EmojisAppTests.swift */; };
 		5A73302A1EFFC81000CB7B2B /* EmojisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7330291EFFC81000CB7B2B /* EmojisAppUITests.swift */; };
+		5A7330381EFFD77400CB7B2B /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7330371EFFD77400CB7B2B /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5A7330251EFFC81000CB7B2B /* EmojisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7330291EFFC81000CB7B2B /* EmojisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisAppUITests.swift; sourceTree = "<group>"; };
 		5A73302B1EFFC81000CB7B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7330371EFFD77400CB7B2B /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				5A7330091EFFC81000CB7B2B /* AppDelegate.swift */,
 				5A73300B1EFFC81000CB7B2B /* ViewController.swift */,
+				5A7330371EFFD77400CB7B2B /* DefinitionViewController.swift */,
 				5A73300D1EFFC81000CB7B2B /* Main.storyboard */,
 				5A7330101EFFC81000CB7B2B /* Assets.xcassets */,
 				5A7330121EFFC81000CB7B2B /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A73300C1EFFC81000CB7B2B /* ViewController.swift in Sources */,
+				5A7330381EFFD77400CB7B2B /* DefinitionViewController.swift in Sources */,
 				5A73300A1EFFC81000CB7B2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
