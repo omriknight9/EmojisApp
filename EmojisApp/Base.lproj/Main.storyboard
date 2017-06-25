@@ -20,11 +20,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-c4-riS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="k5q-Fr-GFU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pCI-fd-ZoU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Lz-c4-riS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E28-ZG-pfa"/>
+                            <constraint firstAttribute="trailing" secondItem="1Lz-c4-riS" secondAttribute="trailing" id="HCd-Wk-Y99"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Lz-c4-riS" secondAttribute="bottom" id="IMd-q1-w0q"/>
+                            <constraint firstItem="1Lz-c4-riS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iRW-oq-LKp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiTableView" destination="1Lz-c4-riS" id="A4G-ns-4zP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F7h-QE-rLe">
+            <objects>
+                <viewController id="ijY-VH-Hl3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IAI-8Q-2CV"/>
+                        <viewControllerLayoutGuide type="bottom" id="yIz-9l-4eq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ul0-Px-HGo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-ux-Puo">
+                                <rect key="frame" x="78.5" y="60" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What A Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Kf-tLX">
+                                <rect key="frame" x="136.5" y="349" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zLp-ux-Puo" firstAttribute="top" secondItem="IAI-8Q-2CV" secondAttribute="bottom" constant="40" id="95F-ir-Waa"/>
+                            <constraint firstItem="zLp-ux-Puo" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="HFx-Oa-yNB"/>
+                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="Nd6-RZ-h5b"/>
+                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="top" secondItem="zLp-ux-Puo" secondAttribute="bottom" constant="50" id="eR2-ED-f7b"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCT-kF-y2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="124"/>
         </scene>
     </scenes>
 </document>
