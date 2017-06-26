@@ -60,29 +60,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What A Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Kf-tLX">
-                                <rect key="frame" x="136" y="362" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-ux-Puo">
                                 <rect key="frame" x="87" y="72" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVf-6E-Dpn">
+                                <rect key="frame" x="129" y="458" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What A Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-MP-Gaq">
+                                <rect key="frame" x="136" y="356" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Kf-tLX">
+                                <rect key="frame" x="122.5" y="407" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="top" secondItem="zLp-ux-Puo" secondAttribute="bottom" constant="51" id="FSs-DA-p4h"/>
                             <constraint firstItem="zLp-ux-Puo" firstAttribute="top" secondItem="IAI-8Q-2CV" secondAttribute="bottom" constant="8" id="TvK-i5-hs2"/>
-                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="eaW-uW-8al"/>
+                            <constraint firstItem="Xm1-MP-Gaq" firstAttribute="top" secondItem="zLp-ux-Puo" secondAttribute="bottom" constant="45" id="U3z-ir-enE"/>
+                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="V4b-BY-cq8"/>
+                            <constraint firstItem="Xm1-MP-Gaq" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="Xxc-ul-UQn"/>
+                            <constraint firstItem="vVf-6E-Dpn" firstAttribute="top" secondItem="f8Z-Kf-tLX" secondAttribute="bottom" constant="30" id="agi-8M-e5v"/>
+                            <constraint firstItem="f8Z-Kf-tLX" firstAttribute="top" secondItem="Xm1-MP-Gaq" secondAttribute="bottom" constant="30" id="fKv-0x-u8z"/>
+                            <constraint firstItem="vVf-6E-Dpn" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" id="rpM-gd-8Xx"/>
                             <constraint firstItem="zLp-ux-Puo" firstAttribute="centerX" secondItem="Ul0-Px-HGo" secondAttribute="centerX" constant="8.5" id="rzp-qX-cIn"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="definitionLbl" destination="f8Z-Kf-tLX" id="cHB-dD-oJP"/>
+                        <outlet property="birthYearLbl" destination="vVf-6E-Dpn" id="91w-DP-hZ0"/>
+                        <outlet property="categoryLbl" destination="f8Z-Kf-tLX" id="fHd-ct-dhK"/>
+                        <outlet property="definitionLbl" destination="Xm1-MP-Gaq" id="YpH-W9-zsO"/>
                         <outlet property="emojiLbl" destination="zLp-ux-Puo" id="LO9-Tt-XNu"/>
                     </connections>
                 </viewController>

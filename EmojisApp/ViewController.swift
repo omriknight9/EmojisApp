@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var emojiTableView: UITableView!
     
-    let emojiArr = ["🤡", "💩", "🤖", "😈", "😱", "🤑", "🐯", "🎱"]
+    var emojiArr: [Emoji] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emojiArr = makeEmojiArray()
         
     }
     
@@ -26,8 +28,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
         let cell = UITableViewCell()
-        
-        cell.textLabel?.text = emojiArr[indexPath.row]
+        let emoji = emojiArr[indexPath.row]
+        cell.textLabel?.text = emoji.stringEmoji
         return cell
     }
     
@@ -39,7 +41,59 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as! DefinitionViewController
-        defVC.emoji = sender as! String
+        defVC.emoji = sender as! Emoji
+    }
+    
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "🤡"
+        emoji1.birthYear = 2011
+        emoji1.category = "Smiley"
+        emoji1.definition = "I'ts a scary Clown"
+        
+        let emoji2 = Emoji()
+        emoji2.stringEmoji = "🎱"
+        emoji2.birthYear = 1990
+        emoji2.category = "Toys"
+        emoji2.definition = "The 8th Ball Is The Winner Or Loser"
+        
+        let emoji3 = Emoji()
+        emoji3.stringEmoji = "🐯"
+        emoji3.birthYear = 2006
+        emoji3.category = "Animals"
+        emoji3.definition = "The Tiger Is A Fierce Predator"
+        
+        let emoji4 = Emoji()
+        emoji4.stringEmoji = "🤑"
+        emoji4.birthYear = 2004
+        emoji4.category = "Smiley"
+        emoji4.definition = "I Have Won The Lottery!"
+        
+        let emoji5 = Emoji()
+        emoji5.stringEmoji = "💩"
+        emoji5.birthYear = 2000
+        emoji5.category = "Smiley"
+        emoji5.definition = "That Is An Awful Smell"
+        
+        let emoji6 = Emoji()
+        emoji6.stringEmoji = "🤖"
+        emoji6.birthYear = 2005
+        emoji6.category = "Toys"
+        emoji6.definition = "The Future Is Here"
+        
+        let emoji7 = Emoji()
+        emoji7.stringEmoji = "😈"
+        emoji7.birthYear = 2013
+        emoji7.category = "Smiley"
+        emoji7.definition = "Be Carful, It's The Devil"
+        
+        let emoji8 = Emoji()
+        emoji8.stringEmoji = "😱"
+        emoji8.birthYear = 2016
+        emoji8.category = "Smiley"
+        emoji8.definition = "Help!!!!"
+        
+        return [emoji1, emoji2, emoji3, emoji4, emoji5, emoji6, emoji7]
     }
     
 

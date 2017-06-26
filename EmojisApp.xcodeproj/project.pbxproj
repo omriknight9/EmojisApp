@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A09FE411F00ED2C00839E43 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09FE401F00ED2C00839E43 /* Emoji.swift */; };
 		5A73300A1EFFC81000CB7B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7330091EFFC81000CB7B2B /* AppDelegate.swift */; };
 		5A73300C1EFFC81000CB7B2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73300B1EFFC81000CB7B2B /* ViewController.swift */; };
 		5A73300F1EFFC81000CB7B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A73300D1EFFC81000CB7B2B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A09FE401F00ED2C00839E43 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		5A7330061EFFC81000CB7B2B /* EmojisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7330091EFFC81000CB7B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A73300B1EFFC81000CB7B2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5A7330091EFFC81000CB7B2B /* AppDelegate.swift */,
 				5A73300B1EFFC81000CB7B2B /* ViewController.swift */,
 				5A7330371EFFD77400CB7B2B /* DefinitionViewController.swift */,
+				5A09FE401F00ED2C00839E43 /* Emoji.swift */,
 				5A73300D1EFFC81000CB7B2B /* Main.storyboard */,
 				5A7330101EFFC81000CB7B2B /* Assets.xcassets */,
 				5A7330121EFFC81000CB7B2B /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				5A73300C1EFFC81000CB7B2B /* ViewController.swift in Sources */,
 				5A7330381EFFD77400CB7B2B /* DefinitionViewController.swift in Sources */,
+				5A09FE411F00ED2C00839E43 /* Emoji.swift in Sources */,
 				5A73300A1EFFC81000CB7B2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				5A7330301EFFC81000CB7B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7330311EFFC81000CB7B2B /* Build configuration list for PBXNativeTarget "EmojisAppTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				5A7330331EFFC81000CB7B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7330341EFFC81000CB7B2B /* Build configuration list for PBXNativeTarget "EmojisAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				5A7330361EFFC81000CB7B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
